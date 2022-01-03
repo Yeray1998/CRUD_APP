@@ -10,7 +10,7 @@ export class FormularioComponent implements OnInit {
 @Output() parametrosSeleccionados = new EventEmitter<any>()
 
   categoriaSeleccionada= 'general';
-  paisSeleccionado='esp';
+  paisSeleccionado='us';
 
   categorias: any[] = [
     {value: 'general', nombre: 'General'},

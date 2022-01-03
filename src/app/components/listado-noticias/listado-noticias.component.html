@@ -1,1 +1,13 @@
-<p>listado-noticias works!</p>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div *ngFor="let Noticia of listNoticia" class="col">
+      <div class="card">
+        <img [src]="Noticia.image" class="card-img-top" alt="...">
+        <div class="card-body">
+         <span class="bade bg-primary mb-1">{{ Noticia.source   }}</span>
+         <h5 class="card-title">{{ Noticia.title}}</h5>
+         <p class="card-text">{{ Noticia.description}}</p>
+         <a [href]="Noticia.url" target="_blank" class="btn btn-primary btn-block">Ver Noticia</a>
+        </div>
+      </div>
+    </div>
+</div>
