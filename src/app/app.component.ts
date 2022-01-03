@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'crud_app';
 
-   
+   buscarNoticias(parametros:any){
+     console.log('soy el padre');
+     console.log(parametros);
+   }
   }
 
